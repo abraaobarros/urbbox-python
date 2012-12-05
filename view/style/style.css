@@ -1,0 +1,44 @@
+body {
+	font-size: 14px;
+    line-height: 18px;
+
+}
+
+/* Responsive design to ipad e iphone */
+
+@media screen and (-webkit-device-pixel-ratio: 0.75) {
+    body {font-size: 10.5px;}
+    li {line-height: 14px; }
+}
+/* desktop browsers */
+@media screen and (-webkit-device-pixel-ratio: 1.0) {
+    body {font-size: 14px;}
+    li {line-height: 20px; }
+}
+
+/* e.g. Google Nexus S (Samsung Galaxy S) */
+@media screen and (-webkit-device-pixel-ratio: 1.5) {
+    body {font-size: 16px;}
+    li {line-height: 24px; }
+}
+
+/* e.g. iPad */
+@media screen and (-webkit-device-pixel-ratio: 2.0) {
+    body {font-size: 24px;}
+    li {line-height: 36px; }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { ... }
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { ... }
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) { ... }
