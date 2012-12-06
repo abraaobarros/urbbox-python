@@ -15,16 +15,9 @@ jinja2.FileSystemLoader(os.path.dirname(__file__)))
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-    	inserir()
-    	estabelecimentos = db.GqlQuery(
-                            "SELECT * "
-    						"FROM Estabelecimento "
-    						"WHERE ANCESTOR IS :1 "
-    						"ORDER BY nome ASC", 
-    						db.Key.from_path('Estabelecimento','nome'))
+        # inserir()  # para fazer funcionar tem que inserir alguma coisa no banco
+    	estabelecimentos = Estabelecimento.all()
     	template = env.get_template('view/index.html')
-        for estabelecimento in estabelecimentos:
-            self.response.out.write(estabelecimento.nome)
         self.response.out.write(template.render(var=estabelecimentos))
 
 def inserir():
@@ -35,5 +28,5 @@ def inserir():
 		estab.logoURL = "teste"+str(i)
 		estab.put()
 
-app = webapp2.WSGIApplication([('/', MainHandler)],
+app = webapp2.WSGIApplication([('/', MainHandler) ],
 debug=True)
