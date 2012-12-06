@@ -5,16 +5,19 @@
 
     <link href="style/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="style/style.css" rel="stylesheet" media="screen">
-
+    <script type="text/javascript" src="js/iphone.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="style/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
 </head>
 <body>
     
-    <h1>Lista Restaurantes</h1>
+    <h1>{{ var }}</h1>
+    
+    
     <div class="row-fluid">
-        <div class="navbar navbar-fixed-bottom">
+        <div class="navbar navbar-fixed-top">
             <div class="navbar-inner">
+                <div class="leftButton" onclick="toggleMenu()">Menu</div>
                 <div class="container">
                     <a href="" class="brand">Urbbox</a>
                     <div class="nav-colappse collapse"></div>
@@ -28,95 +31,17 @@
 
         
         <div id="restaurantes">
-            <div class="row">
-                <div class="span4">
-                    <a href="#" class="thumbnail"><img src="http://placehold.it/260x180" alt=""></a>
+            {% for x in range(10) %}
+                <div class="row">
+                    <div class="span4">
+                        <a href="#" class="thumbnail"><img src="http://placehold.it/260x180" alt=""></a>
+                    </div>
+                    <div class="span7">
+                        <h4>Ponto de luz</h4>
+                        <p>O Melhor bar da cidade</p>
+                    </div>
                 </div>
-                <div class="span7">
-                    <h4>Ponto de luz</h4>
-                    <p>O Melhor bar da cidade</p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="span4">
-                    <a href="#" class="thumbnail"><img src="http://placehold.it/260x180" alt=""></a>
-                </div>
-                <div class="span7">
-                    <h4>Doidera</h4>
-                    <p>O Melhor bar da cidade</p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="span4">
-                    <a href="#" class="thumbnail"><img src="http://placehold.it/260x180" alt=""></a>
-                </div>
-                <div class="span7">
-                    <h4>Doidera</h4>
-                    <p>O Melhor bar da cidade</p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="span4">
-                    <a href="#" class="thumbnail"><img src="http://placehold.it/260x180" alt=""></a>
-                </div>
-                <div class="span7">
-                    <h4>Doidera</h4>
-                    <p>O Melhor bar da cidade</p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="span4">
-                    <a href="#" class="thumbnail"><img src="http://placehold.it/260x180" alt=""></a>
-                </div>
-                <div class="span7">
-                    <h4>Doidera</h4>
-                    <p>O Melhor bar da cidade</p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="span4">
-                    <a href="#" class="thumbnail"><img src="http://placehold.it/260x180" alt=""></a>
-                </div>
-                <div class="span7">
-                    <h4>Doidera</h4>
-                    <p>O Melhor bar da cidade</p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="span4">
-                    <a href="#" class="thumbnail"><img src="http://placehold.it/260x180" alt=""></a>
-                </div>
-                <div class="span7">
-                    <h4>Doidera</h4>
-                    <p>O Melhor bar da cidade</p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="span4">
-                    <a href="#" class="thumbnail"><img src="http://placehold.it/260x180" alt=""></a>
-                </div>
-                <div class="span7">
-                    <h4>Doidera</h4>
-                    <p>O Melhor bar da cidade</p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="span4">
-                    <a href="#" class="thumbnail"><img src="http://placehold.it/260x180" alt=""></a>
-                </div>
-                <div class="span7">
-                    <h4>Doidera</h4>
-                    <p>O Melhor bar da cidade</p>
-                </div>
-            </div>
+            {% endfor %}
         </div>
         <div class="row"></div>
         <div class="pagination pagination-centered">

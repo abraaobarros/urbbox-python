@@ -7,7 +7,6 @@ def isOdd(n):
 class isOddTest(unittest.TestCase):
     def testOne(self):
         self.failUnless(isOdd(1))
-        
     def testTwo(self):
         self.failIf(isOdd(2))
 

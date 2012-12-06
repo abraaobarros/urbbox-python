@@ -4,13 +4,27 @@ body {
 
 }
 
+div.leftButton{
+    position: absolute;
+    top: 7px;
+    left: 6px;S
+    height: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    text-shadow: rgba(0,0,0,0.6) 0px -1px 0px;
+    line-height: 28px;
+    -webkit-border-width: 0 8px 0 8px;
+    border-width: 0 8px 0 8px;
+}
+
 /* Responsive design to ipad e iphone */
 
 @media screen and (-webkit-device-pixel-ratio: 0.75) {
     body {font-size: 10.5px;}
     li {line-height: 14px; }
 }
-/* desktop browsers */
+/* desktop browser,s */
 @media screen and (-webkit-device-pixel-ratio: 1.0) {
     body {font-size: 14px;}
     li {line-height: 20px; }
