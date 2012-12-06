@@ -1,0 +1,10 @@
+from google.appengine.ext import db
+
+class Estabelecimento(db.Model):
+	nome = db.StringProperty()
+	descricao = db.StringProperty()
+	logoURL = db.StringProperty()
+	
+
+
+#Ainda não estou usando esse arquivo. Tem que conseguir importar.
