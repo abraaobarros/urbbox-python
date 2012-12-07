@@ -18,6 +18,22 @@ div.leftButton{
     border-width: 0 8px 0 8px;
 }
 
+#progress {
+    -webkit-border-radius: 10px;
+    background-color: rgba(0,0,0,.7);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    height: 80px;
+    left: 30%;
+    line-height: 80px;
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
+    top: 120px;
+    width: 200px;
+}
+
 /* Responsive design to ipad e iphone */
 
 @media screen and (-webkit-device-pixel-ratio: 0.75) {
